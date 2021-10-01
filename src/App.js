@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from 'react';
+//import "@fontsource/roboto";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ResumePage from "./pages/ResumePage";
+import AboutMePage from "./pages/AboutMePage";
+import AppDrawer from "./components/AppDrawer";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-container">
+        <AppDrawer />
+        <Router>
+          <Switch>
+            <Route path ="/" exact>
+              <HomePage />
+            </Route>
+            <Route path ="/Projects" exact>
+              <ProjectsPage />
+            </Route>
+            <Route path ="/AboutMe" exact>
+              <AboutMePage />
+            </Route>
+            <Route path ="/Resume" exact>
+              <ResumePage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }

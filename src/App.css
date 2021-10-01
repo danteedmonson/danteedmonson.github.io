@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100%;
 }
 
 .App-logo {
@@ -36,3 +37,79 @@
     transform: rotate(360deg);
   }
 }
+
+
+.AppBarContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.AppBarTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.AppBarLinks {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.AppBarButtons {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.HomePageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 100vh;
+  
+  background-color: #797B84;
+}
+
+
+@media (max-width: 800px) {
+  .HomePageContent {
+    flex: 100%;
+    margin-top: 60.4px;
+    
+  }
+
+  .HomePageContent > img {
+    width: 50% !important;
+    margin-top: 10%;
+  }
+
+  .HomePageContent > div {
+    width: 60% !important;
+    text-align: center !important;
+   
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 801px) {
+  .HomePageContent {
+    flex: 100%;
+    margin-top: 60.4px;
+    
+  }
+
+  .HomePageContent > img {
+    width: 30% !important;
+    margin-top: 10%;
+  }
+
+  .HomePageContent > div {
+    width: 60% !important;
+    text-align: center !important;
+   
+  }
+}
+
+
