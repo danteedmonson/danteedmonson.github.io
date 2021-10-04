@@ -46,7 +46,7 @@ function AppDrawer() {
     return (
         <>
 
-            <AppBar position="fixed" style={{ backgroundColor: "black" }}>
+            <AppBar position="fixed" style={{ backgroundColor: "black" }} className="AppBar">
                 <Toolbar style={{ alignItems: "center" }}>
                     <div className="AppBarContent">
                         <div className="AppBarTitle">
