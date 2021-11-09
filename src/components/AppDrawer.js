@@ -54,14 +54,14 @@ function AppDrawer() {
                         
                        
 
-                        <IconButton edge="start" color="inherit" aria-label="menu" onClick={() => setDrawerState(true)}>
+                        <IconButton edge="start" color="inherit" aria-label="menu" onClick={()=> window.location.href = '/'} >
                         <img src={logo} alt="Logo" style={{height:20}}/>
                         </IconButton>
                         </div>
                         <div className="AppBarLinks">
-                        <Button className="AppBarButtons" color="inherit" style={buttonStyle}>About Me</Button>
+                        <Button className="AppBarButtons" color="inherit" onClick={()=> window.location.href = '/'} style={buttonStyle}>About Me</Button>
                         <Button className="AppBarButtons" color="inherit" style={buttonStyle}>Projects</Button>
-                        <Button className="AppBarButtons" color="inherit" style={buttonStyle}>Resume</Button>
+                        <Button className="AppBarButtons" color="inherit" onClick={()=> window.location.href = '/Resume'} style={buttonStyle}>Resume</Button>
                         </div>
                     </div>
                 </Toolbar>

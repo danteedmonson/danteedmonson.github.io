@@ -17,7 +17,7 @@ function HomePage() {
         <div className="HomePageContent">
             <ToolBar />
             <div className="AboutMe">
-                <img className="picture" src={pPic} alt="Dante" style={{ height: "50vh" }} />
+                <img className="picture" src={pPic} alt="Dante" style={{ height: "50vh", maxHeight:350 }} />
 
                 <div className="desc" style={{ color: "white", fontFamily: " 'Roboto', sans-serif", width: "35%", fontSize: 20, textAlign: "justify", fontWeight: 200 }}>
                     <p> Hi! My name is Dante, I'm a software engineer with a passion for full-stack web development.
