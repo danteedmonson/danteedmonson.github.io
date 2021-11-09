@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <div className="App-container">
         <AppDrawer />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route path ="/" exact>
               <HomePage />
