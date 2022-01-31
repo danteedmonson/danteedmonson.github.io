@@ -6,29 +6,22 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
 import AboutMePage from "./pages/AboutMePage";
 import AppDrawer from "./components/AppDrawer";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
       <div className="App-container">
+        
+        <Router>
         <AppDrawer />
-        <Router basename={process.env.PUBLIC_URL}>
-          <Switch>
-            <Route path ="/" exact>
-              <HomePage />
-            </Route>
-            <Route path ="/Projects" exact>
-              <ProjectsPage />
-            </Route>
-            <Route path ="/AboutMe" exact>
-              <AboutMePage />
-            </Route>
-            <Route path ="/Resume" exact>
-              <ResumePage />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path ="/" exact element={<HomePage />}/>
+            <Route path ="/Projects" exact element={<ProjectsPage />}/>
+            <Route path ="/AboutMe" exact element={<AboutMePage />}/> 
+            <Route path ="/Resume" exact element={<ResumePage />}/>
+          </Routes>
         </Router>
       </div>
     </div>

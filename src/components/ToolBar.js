@@ -9,7 +9,7 @@ function ToolBar () {
 
     return(
        
-        <div className="ToolBar" style={{display:"flex", position:"fixed", bottom:0, left:0}}>
+        <div className="ToolBar" style={{display:"flex", position:"fixed", bottom:0, left:0, zIndex:999}}>
             <IconButton onClick={()=> window.open("https://github.com/danteedmonson")} aria-label="Github" className="Github">
                 <GitHubIcon  style={{color:"white", width:40, height:40}} />
             </IconButton>

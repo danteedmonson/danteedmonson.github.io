@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import resume from '../components/Dante_Edmonson_Resume2021.pdf';
+import Fade from 'react-reveal/Fade';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumePage() {
@@ -15,7 +17,7 @@ function ResumePage() {
                     file={resume}
         
                 >
-                            <Page pageNumber={1} scale={1.5} />
+                            <Fade bottom><Page pageNumber={1} scale={1.5} /></Fade>
 
                 </Document>
             </div>
