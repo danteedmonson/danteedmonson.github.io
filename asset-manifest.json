@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.445958b5.chunk.css",
-    "main.js": "/static/js/main.be7a52e1.chunk.js",
-    "main.js.map": "/static/js/main.be7a52e1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ead97bf7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ead97bf7.js.map",
-    "static/js/2.fc15a781.chunk.js": "/static/js/2.fc15a781.chunk.js",
-    "static/js/2.fc15a781.chunk.js.map": "/static/js/2.fc15a781.chunk.js.map",
-    "static/js/3.9c8d2b69.chunk.js": "/static/js/3.9c8d2b69.chunk.js",
-    "static/js/3.9c8d2b69.chunk.js.map": "/static/js/3.9c8d2b69.chunk.js.map",
+    "main.css": "/static/css/main.87f6b82c.chunk.css",
+    "main.js": "/static/js/main.c358d403.chunk.js",
+    "main.js.map": "/static/js/main.c358d403.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19dc7ea1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19dc7ea1.js.map",
+    "static/js/2.c7d6a8c0.chunk.js": "/static/js/2.c7d6a8c0.chunk.js",
+    "static/js/2.c7d6a8c0.chunk.js.map": "/static/js/2.c7d6a8c0.chunk.js.map",
+    "static/js/3.1d547a55.chunk.js": "/static/js/3.1d547a55.chunk.js",
+    "static/js/3.1d547a55.chunk.js.map": "/static/js/3.1d547a55.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.445958b5.chunk.css.map": "/static/css/main.445958b5.chunk.css.map",
-    "static/js/2.fc15a781.chunk.js.LICENSE.txt": "/static/js/2.fc15a781.chunk.js.LICENSE.txt",
-    "static/media/Dante_Edmonson_Resume2021.f79a50df.pdf": "/static/media/Dante_Edmonson_Resume2021.f79a50df.pdf",
+    "static/css/main.87f6b82c.chunk.css.map": "/static/css/main.87f6b82c.chunk.css.map",
+    "static/js/2.c7d6a8c0.chunk.js.LICENSE.txt": "/static/js/2.c7d6a8c0.chunk.js.LICENSE.txt",
+    "static/media/Dante_Edmonson_Resume2021.eec400aa.pdf": "/static/media/Dante_Edmonson_Resume2021.eec400aa.pdf",
     "static/media/habit-tracker.6e74c084.png": "/static/media/habit-tracker.6e74c084.png",
     "static/media/jotfoxpicture.7596f2ba.png": "/static/media/jotfoxpicture.7596f2ba.png",
     "static/media/logo.d8cd4f00.svg": "/static/media/logo.d8cd4f00.svg",
@@ -20,9 +20,9 @@
     "static/media/qrdocenthomepage.4343b1ac.png": "/static/media/qrdocenthomepage.4343b1ac.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ead97bf7.js",
-    "static/js/2.fc15a781.chunk.js",
-    "static/css/main.445958b5.chunk.css",
-    "static/js/main.be7a52e1.chunk.js"
+    "static/js/runtime-main.19dc7ea1.js",
+    "static/js/2.c7d6a8c0.chunk.js",
+    "static/css/main.87f6b82c.chunk.css",
+    "static/js/main.c358d403.chunk.js"
   ]
 }
