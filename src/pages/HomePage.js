@@ -29,7 +29,7 @@ function HomePage() {
 
                 <div className="desc" style={{ color: "white", fontFamily: " 'Roboto', sans-serif", width: "35%", fontSize: 20, textAlign: "justify", fontWeight: 200 }}>
                     <p> Hi! My name is Dante, I'm a software engineer with a passion for full-stack web development.
-                        I've recently graduated from the University of Central FLorida in December 2021. I plan to use my
+                        I've recently graduated from the University of Central Florida in December 2021. I plan to use my
                         skills and education towards a career that will enable me to develop software at a high degree.
                     </p>
                 </div>
