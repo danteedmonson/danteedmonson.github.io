@@ -1,22 +1,27 @@
-import React from 'react';
-import pPic from '../images/profilePic3.png';
-import ToolBar from '../components/ToolBar';
+import React, { useEffect } from 'react';
 import habitPic from '../images/habit-tracker.png';
 import qrPic from '../images/qrdocenthomepage.png';
 import jotfoxPic from '../images/jotfoxpicture.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Button, IconButton } from "@material-ui/core";
+import {  IconButton } from "@material-ui/core";
 import Fade from 'react-reveal/Fade';
+import { useLocation } from "react-router-dom";
+
 
 
 
 function ProjectsPage() {
+    const { pathname } = useLocation();
 
-    return(
-        <div style={{marginTop:70}}>
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return (
+        <div style={{ marginTop: 70 }}>
             <div className="Project">
                 <h5>Habeuro: habit-tracker</h5>
-               <img src={habitPic} alt="Habeuro.com" />
+                <img src={habitPic} alt="Habeuro.com" />
                 <Fade bottom>
 
                     <div className="DefaultDesc">
@@ -25,12 +30,12 @@ function ProjectsPage() {
                             With Habeuro users will have access to substantial data regarding their habit tracking.
 
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://habeuro.com">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://habeuro.com">here</a></p>
                         <p className="techStack">
                             MongoDB | React JS | Node JS | Express | Digital Ocean
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github" onClick={()=>window.location.href= "https://github.com/danteedmonson/habit-tracking"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/danteedmonson/habit-tracking"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -52,12 +57,12 @@ function ProjectsPage() {
                             videos, and external links. Musuems are able to customize exhibit information from the admin website.
 
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://qrdocent.com">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://qrdocent.com">here</a></p>
                         <p className="techStack">
                             PostgreSQL | React JS | React Native | Node JS | Vercel | Digital Ocean
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github" onClick={()=>window.location.href= "https://github.com/Mayank-Patel1/QRdocent"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/Mayank-Patel1/QRdocent"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -69,21 +74,21 @@ function ProjectsPage() {
 
             <div className="Project">
                 <h5>JotFox: Note-Taking</h5>
-               <img src={jotfoxPic} alt="Habeuro.com" />
+                <img src={jotfoxPic} alt="Habeuro.com" />
                 <Fade bottom>
 
                     <div className="DefaultDesc">
                         <p className="projectDesc">
-                        A note-taking application that gives users the ultimate organization. With Jot Fox, users are able to create and
-                        organize notes by placing them into a category or adding tags. They are also able to give the note a priority, which
-                        is based on color. This gives users the option to filter or sort notes based on different properties (categories, tags, priority)
+                            A note-taking application that gives users the ultimate organization. With Jot Fox, users are able to create and
+                            organize notes by placing them into a category or adding tags. They are also able to give the note a priority, which
+                            is based on color. This gives users the option to filter or sort notes based on different properties (categories, tags, priority)
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://github.com/FourScript/notetakingapp">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://github.com/FourScript/notetakingapp">here</a></p>
                         <p className="techStack">
-                        MySQL | React JS | Node JS | Express | Google Cloud
+                            MySQL | React JS | Node JS | Express | Google Cloud
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github"  onClick={()=>window.location.href= "https://github.com/FourScript/notetakingapp"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/FourScript/notetakingapp"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -93,7 +98,7 @@ function ProjectsPage() {
 
 
 
-            
+
 
         </div>
     )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import pPic from '../images/profilePic3.png';
 import ToolBar from '../components/ToolBar';
 import habitPic from '../images/habit-tracker.png';
@@ -7,11 +7,19 @@ import jotfoxPic from '../images/jotfoxpicture.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button, IconButton } from "@material-ui/core";
 import Fade from 'react-reveal/Fade';
+import { useLocation } from "react-router-dom";
+
 
 
 
 
 function HomePage() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
 
     return (
         <div className="HomePageContent">
@@ -41,12 +49,12 @@ function HomePage() {
                             With Habeuro users will have access to substantial data regarding their habit tracking.
 
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://habeuro.com">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://habeuro.com">here</a></p>
                         <p className="techStack">
                             MongoDB | React JS | Node JS | Express | Digital Ocean
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github" onClick={()=>window.location.href= "https://github.com/danteedmonson/habit-tracking"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/danteedmonson/habit-tracking"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -67,12 +75,12 @@ function HomePage() {
                             playlist and add songs to playlist. The mobile app will also show exhibit information, such as a biography,
                             videos, and external links. Musuems are able to customize exhibit information from the admin website.
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://qrdocent.com">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://qrdocent.com">here</a></p>
                         <p className="techStack">
                             PostgreSQL | React JS | React Native | Node JS | Vercel | Digital Ocean
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github" onClick={()=>window.location.href= "https://github.com/Mayank-Patel1/QRdocent"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/Mayank-Patel1/QRdocent"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -94,12 +102,12 @@ function HomePage() {
                             organize notes by placing them into a category or adding tags. They are also able to give the note a priority, which
                             is based on color. This gives users the option to filter or sort notes based on different properties (categories, tags, priority)
                         </p>
-                        <p style={{paddingLeft:"3%"}}>Check it out <a href="https://github.com/FourScript/notetakingapp">here</a></p>
+                        <p style={{ paddingLeft: "3%" }}>Check it out <a href="https://github.com/FourScript/notetakingapp">here</a></p>
                         <p className="techStack">
                             MySQL | React JS | Node JS | Express | Google Cloud
                         </p>
                         <div className="gitLink">
-                            <IconButton aria-label="Github" onClick={()=>window.location.href= "https://github.com/FourScript/notetakingapp"}>
+                            <IconButton aria-label="Github" onClick={() => window.location.href = "https://github.com/FourScript/notetakingapp"}>
                                 <GitHubIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
@@ -135,24 +143,24 @@ function HomePage() {
             </Fade>
             <Fade bottom><h4>Languages and Tools</h4></Fade>
             <Fade bottom>
-            <div className='progLang'>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>JavaScript</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>React</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>React Native</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Node.js</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Express</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Hooks</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>HTML 5</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>CSS3</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>SASS</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>SCSS</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Java</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>C</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>MongoDB</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>MySQL</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Git</h5></div>
-                <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>GitHub</h5></div> 
-            </div>
+                <div className='progLang'>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>JavaScript</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>React</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>React Native</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Node.js</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Express</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Hooks</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>HTML 5</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>CSS3</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>SASS</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>SCSS</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Java</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>C</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>MongoDB</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>MySQL</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>Git</h5></div>
+                    <div className="goodDesc" style={{ width: "15vw", height: "5vw" }}><h5>GitHub</h5></div>
+                </div>
             </Fade>
             <div style={{ marginBottom: "11%" }} />
 
