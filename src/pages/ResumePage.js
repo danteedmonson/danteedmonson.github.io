@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import resume from '../components/Dante_Edmonson_Resume2021.pdf';
+import resume from '../components/Dante_Edmonson_Resume_Update.pdf';
 import Fade from 'react-reveal/Fade';
 import { useLocation } from "react-router-dom";
 
